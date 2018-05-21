@@ -1,0 +1,40 @@
+div.rotate {
+    position:relative;
+    text-align:center;
+    overflow:hidden;
+}
+
+div.rotate img {
+    margin:auto;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    display: none;
+    opacity:0;
+    object-fit:contain;
+}
+
+div.rotate .title {
+    bottom:0;
+    position:absolute;
+    left:0;
+    right:0;
+
+}
+
+div.rotate img.hide {
+    opacity:0;
+    display: block;
+}
+
+
+div.rotate img.show {
+    opacity:1;
+    display: block;
+}
