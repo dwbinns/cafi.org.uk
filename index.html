@@ -7,6 +7,12 @@
     </script>
     <script src='rotate.js'>
     </script>
+    <script>
+        window.addEventListener("load", function(){
+            document.querySelector("input[name='valid']").value='valid';
+            document.querySelectorAll(".noscript").forEach(item=>item.style.display='none');
+        });
+    </script>
     <link href="rotate.css" rel="stylesheet"/>
     <style>
         @font-face {
@@ -295,6 +301,7 @@
                 </div>
                 <div><input type="submit" name="subject" value="Submit question"/>
                 </div>
+                <div class='noscript'>Please enter the text 'yes' into this to confirm you are human: <input type='text' name='valid'/></div>
             </form>
 
 
