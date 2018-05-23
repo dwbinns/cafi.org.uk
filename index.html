@@ -106,9 +106,14 @@
 
         div.events {
             float:left;
-            max-width: 350px;
+            max-width: 400px;
             width: 100%;
-            padding: 25px;
+            padding-top: 50px;
+            height: 2000px;
+        }
+
+        div.events>div {
+            margin: 25px;
         }
 
 
@@ -180,6 +185,9 @@
             }
             div.header {
                 background-image:url('images/1200x900/barn-team.jpeg');
+            }
+            div.events {
+                height: 3200px;
             }
         }
 
@@ -275,7 +283,7 @@
 
             <h2>Ask a question!</h2>
 
-            <form class="contact" action="server/process_form.py" method="POST">
+            <form class="contact" action="http://www.cafi.org.uk/server/process_form.py" method="POST">
                 <table>
                     <tr><td>Your name:</td><td><input type="text" name="name"/></td></tr>
                     <tr><td>Your email:</td><td><input type="text" name="email"/></td></tr>
@@ -286,7 +294,7 @@
                     <textarea style="width:100%;height:4em;" name="message"></textarea>
                 </div>
                 <div><input type="submit" name="subject" value="Submit question"/>
-                    <span style="font-size:70%"><!--#include virtual='server/validate_form.py'--></span></div>
+                </div>
             </form>
 
 
