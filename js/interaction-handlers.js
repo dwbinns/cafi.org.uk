@@ -1,6 +1,9 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $('input[name="valid"]').val("yes");
+  $('.noscript').each(function() { $(this).hide(); });
+
   // Closes the sidebar menu
   $('.menu-toggle').click(function(e) {
     e.preventDefault();
@@ -38,6 +41,28 @@
     } else {
       $('.scroll-to-top').fadeOut();
     }
+  });
+
+  var updateFBPageDimensions = function(onInitialLoad) {
+    var $fbPage = $('div.events > .fb-page').css('position', 'absolute'),
+	$ctnr = $fbPage.parent(), init_height = onInitialLoad && Number($fbPage.data('height')),
+	container_width = Math.round($ctnr.width()),
+	container_height = $ctnr.outerHeight();
+    if (!isNaN(container_width) && !isNaN(container_height)) {
+      $fbPage.attr('data-width', container_width);
+      if ((!init_height && container_height > 500) || container_height > init_height) {
+	    $fbPage.attr('data-height', container_height);
+      }
+    }
+	$fbPage.css('position', "");
+    if (typeof FB !== 'undefined' && !onInitialLoad && container_height > 500) {
+      FB.XFBML.parse();
+    }
+  };
+
+  updateFBPageDimensions(true);
+  $(window).on('resize', function() {
+    setTimeout(function(){updateFBPageDimensions()}, 0);
   });
 
 })(jQuery); // End of use strict
