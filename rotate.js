@@ -1,9 +1,7 @@
 function rotate(container) {
-    var images=container.querySelectorAll("img");
+    var images=container.querySelectorAll("div");
 
     var title=container.querySelector('p.title');
-
-
 
     var imageNumber=0;
 
@@ -23,14 +21,13 @@ function rotate(container) {
 
     function change() {
         let devicePixelWidth = container.offsetWidth * window.devicePixelRatio;
-        let size=sizes.filter((size)=>size.split("x")[0]>devicePixelWidth)[0];
+        let size=sizes.filter((size)=>size.split("x")[0]>devicePixelWidth)[0] || "full";
         if (currentImage) currentImage.className='hide';
         currentImage=nextImage;
         currentImage.className='show';
         nextImage=images[(imageNumber++)%images.length];
-        nextImage.setAttribute('src',["images",size, nextImage.getAttribute('data-src')].filter(x=>x).join("/"));
+        nextImage.style.backgroundImage='url('+["images",size, nextImage.getAttribute('data-src')].join("/")+')';
         nextImage.className='hide';
-        //nextImage.style.backgroundImage='url('+nextImage.getAttribute('data-src')+')';
         if (title) title.textContent=currentImage.getAttribute('title');
     }
 
@@ -40,6 +37,6 @@ function rotate(container) {
     container.onclick=function() {paused=true;change();};
 }
 
-window.addEventListener('load',function() {
+window.addEventListener('DOMContentLoaded',function() {
     document.body.querySelectorAll('div.rotate').forEach(rotate);
 });

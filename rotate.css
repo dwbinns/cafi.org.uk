@@ -4,7 +4,7 @@ div.rotate {
     overflow:hidden;
 }
 
-div.rotate img {
+div.rotate div {
     margin:auto;
     position:absolute;
     width: 100%;
@@ -15,9 +15,14 @@ div.rotate img {
     right:0;
     transition-property: opacity;
     transition-duration: 2s;
-    display: none;
     opacity:0;
-    object-fit:contain;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 div.rotate .title {
@@ -28,13 +33,11 @@ div.rotate .title {
 
 }
 
-div.rotate img.hide {
+div.rotate .hide {
     opacity:0;
-    display: block;
 }
 
 
-div.rotate img.show {
+div.rotate .show {
     opacity:1;
-    display: block;
 }

@@ -6,9 +6,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="css/fontawesome-all.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
+    <link href="rotate.css" rel="stylesheet"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
+    <script src="rotate.js"></script>
 <head>
 <body id="page-top">
     <!-- Slide-in Navigation -->
@@ -36,62 +38,28 @@
     </nav>
 
     <header>
-		<div class="carousel slide carousel-fade" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active" style="background-image: url('images/andys.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Andy's</h5>
-						<p>If you're not here, you're missing out! :)</p>
-					</div>
-				</div>
-				<div class="carousel-item" style="background-image: url('images/explore.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Explore</h5>
-						<!-- <p>lorem ipsum door...</p> -->
-					</div>
-				</div>
-				<div class="carousel-item" style="background-image: url('images/weekend-away-2016.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Weekend Away</h5>
-						<!-- <p>lorem ipsum door...</p> -->
-					</div>
-				</div>
-				<div class="carousel-item" style="background-image: url('images/backs-river-cam.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Cambridge Backs, on the river Cam</h5>
-					</div>
-				</div>
-				<div class="carousel-item" style="background-image: url('images/cafe-discussion1.jpg')">
-					<!-- <div class="carousel-caption d-none d-md-block">
-						<h5></h5>
-					</div> -->
-				</div>
-				<div class="carousel-item" style="background-image: url('images/cafe-discussion2.jpg')">
-					<!-- <div class="carousel-caption d-none d-md-block">
-						<h5></h5>
-					</div> -->
-				</div>
-				<div class="carousel-item" style="background-image: url('images/puzzling.jpg')">
-					<!-- <div class="carousel-caption d-none d-md-block">
-						<h5></h5>
-					</div> -->
-				</div>
-				<div class="carousel-item" style="background-image: url('images/compass-barn-fliers.jpg')">
-					<!-- <div class="carousel-caption d-none d-md-block">
-						<h5></h5>
-					</div> -->
-				</div>
-				<div class="carousel-item" style="background-image: url('images/green-alley.jpg')">
-					<!-- <div class="carousel-caption d-none d-md-block">
-						<h5></h5>
-					</div> -->
-				</div>
-				<div class="carousel-item" style="background-image: url('images/tea!.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Tea!</h5>
-					</div>
-				</div>
-			</div>
+		<div class="rotate">
+            <div data-src="avenue.jpeg" style='background-image:url("images/400x300/avenue.jpeg")' class="show"></div>
+            <div data-src="barn.jpeg"></div>
+            <div data-src="cats.jpeg"></div>
+            <div data-src="coffee.jpeg"></div>
+            <div data-src="compass-flags.jpeg"></div>
+            <div data-src="compass-table1.jpeg"></div>
+            <div data-src="compass-table2.jpeg"></div>
+            <div data-src="compass-table3.jpeg"></div>
+            <div data-src="compass-table4.jpeg"></div>
+            <div data-src="compass-table5.jpeg"></div>
+            <div data-src="compass.jpeg"></div>
+            <div data-src="discussion.jpeg"></div>
+            <div data-src="explore.jpeg"></div>
+            <div data-src="flags.jpeg"></div>
+            <div data-src="kings.jpeg"></div>
+            <div data-src="river1.jpeg"></div>
+            <div data-src="river2.jpeg"></div>
+            <div data-src="river3.jpeg"></div>
+            <div data-src="tabletennis.jpeg"></div>
+            <div data-src="weekend-away.jpeg"></div>
+            <div data-src="welcome-tea.jpeg"></div>
 		</div>
 		<div class="masthead d-flex">
 			<div class="heading container text-center my-auto">
@@ -114,19 +82,22 @@
 								<p>September - June, Thursdays</p>
 								<p>7:45 - 10:30pm</p>
 								<p>Christchurch hall<br/> Newmarket Road<br/> CB5 8DT</p>
+                                <p>
+                                    <a href='https://www.facebook.com/groups/267345896629390'>Facebook</a>
+                                </p>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="feature">
 								<h3>iCafe</h3>
 								<p>
-									Meet new friends and practise English. Eat free cakes. Have fun. Organised by the chaplaincy of Anglia Ruskin University.
+                                    iCafé is for international students at Anglia Ruskin University.
+                                    Come and join the ‘iCafé family’ where you’ll meet new friends and enjoy:
+                                    cultural nights, games and international food.
+                                    Organised by Friends International and ARU Chaplaincy.
 								</p>
 								<p>
-									ARU term time, Mondays
-								</p>
-								<p>
-									6-8pm, Coslett common room, ARU
+									ARU term time, Mondays 6-8pm, Cos 125, ARU.
 								</p>
 							</div>
 						</div>
@@ -157,6 +128,9 @@
 									For international students, in simple English.
 									Each week - a meal together, a short talk and discussion in small groups
 								</p>
+                                <p>
+                                    <a href='https://www.facebook.com/CompassCafe'>Facebook</a>
+                                </p>
 							</div>
 						</div>
 					</div>
@@ -170,11 +144,11 @@
 								<ul>
 									<li>4 - 5:30pm English corner, at Eden Baptist church</li>
 									<li>4 - 5:30pm Sports in the park, including Volleyball, football, frisbee</li>
-									<li>8 - 10:30pm Andy's cafe, different activities each evening</li>
+									<li>8 - 10:30pm Andy's cafe, different activities each evening, St Andrew's St, CB2 3AR</li>
 								</ul>
-								<p>
-									Andy's cafe - St Andrew's St, CB2 3AR
-								</p>
+                                <p>
+                                    <a href='andys'>more...</a> | <a href='https://www.facebook.com/cambridgeandys/'>Facebook</a>
+                                </p>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -209,7 +183,7 @@
 			<iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
 				src="https://maps.google.co.uk/maps/ms?msa=0&amp;msid=203908751411462942323.0004addc3b15809d7c43a&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=52.205187,0.130377&amp;spn=0.013151,0.030041&amp;z=15&amp;output=embed"></iframe>
 		</section>
-		<section id="contact" class="contact_area">
+		<section id="contact" class="contact_area image-barn-team">
 			<div class="row">
 				<div class="col-xs-12 col-md-5">
 					<!--

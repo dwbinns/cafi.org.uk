@@ -16,14 +16,11 @@ body {
 header {
 	position: relative;
 }
-header .carousel-item {
+header .rotate {
+	position: relative;
 	height: 70vh;
 	min-height: 300px;
-	background: no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
 }
 header .carousel-fade .carousel-item {
     opacity: 0;
@@ -47,14 +44,14 @@ div.heading {
 	padding: 10px;
 }
 div.heading h1 {
-	font-size: 55px;
+	font-size: 5.5vw;
 	text-shadow: #000 0px 0 5px;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 div.heading h2 {
-	font-size: 20px;
+	font-size: 2vw;
 	text-shadow: #000 0px 0 5px;
 	margin: 0;
 	padding: 2px;
@@ -65,19 +62,24 @@ div.heading h2 {
 	header .masthead {
 		height: 70vh;
 	}
-	div.heading {
-		max-width: 860px;
+}
+
+@media (max-width : 600px) {
+	div.heading h1 {
+		font-size: 33px;
+	}
+	div.heading h2 {
+		font-size: 20px;
 	}
 }
+
+
 @media (max-width : 400px) {
 	header .masthead {
 		padding-top: 5rem;
 	}
 	div.heading {
 		max-width: 90%;
-	}
-	div.heading h1 {
-		font-size: 50px;
 	}
 }
 
@@ -111,8 +113,13 @@ iframe.map {
 .mt-20 {
 	margin-top: 20px;
 }
+
+.image-barn-team {background-image:url("../images/full/barn-team.jpeg")}
+@media (max-width : 400px) {.image-barn-team {background-image:url("../images/400x300/barn-team.jpeg")}}
+@media (max-width : 800px) {.image-barn-team {background-image:url("../images/800x600/barn-team.jpeg")}}
+@media (max-width : 1200px) {.imags-barn-team {background-image:url("../images/1200x900/barn-team.jpeg")}}
+
 section.contact_area {
-	background-image: url('../images/barn-team.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
