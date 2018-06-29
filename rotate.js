@@ -16,7 +16,7 @@ function rotate(container) {
         if (!paused) change();
     }
 
-    let sizes=['400x300', '800x600', '1200x900'];
+    let sizes=['400x300', '800x600', '1200x900', '1600x1200', '2000x1500'];
 
 
     function change() {

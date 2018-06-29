@@ -16,7 +16,7 @@ function exec(command, ...args) {
     let here=__dirname;
     let source=join(here,"renamed");
 
-    let sizes = ['400x300', '800x600', '1200x900', 'full'];
+    let sizes = ['400x300', '800x600', '1200x900', '1600x1200', '2000x1500', 'full'];
 
     await Promise.all(sizes.map(size=>mkdir(join(here,size)).catch(e=>{if (e.code!="EEXIST") throw e;})));
 
@@ -32,7 +32,7 @@ function exec(command, ...args) {
         await Promise.all(sizes.map(size=>{
             let target=join(here,size);
             let width=size.split("x")[0];
-            if (size!=full) cssText+=`@media (max-width : ${width}px) {.images-${name} {background-image:url("${size}/${file}")}}\n`;
+            if (size!='full') cssText+=`@media (max-width : ${width}px) {.images-${name} {background-image:url("${size}/${file}")}}\n`;
             return exec('convert',join(source,file),'-interlace','Plane',...size!="full"?['-resize',size]:[],'-quality','90',join(target,file));
         }));
     }

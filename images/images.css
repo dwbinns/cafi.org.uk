@@ -2,109 +2,131 @@
 @media (max-width : 400px) {.images-avenue {background-image:url("400x300/avenue.jpeg")}}
 @media (max-width : 800px) {.images-avenue {background-image:url("800x600/avenue.jpeg")}}
 @media (max-width : 1200px) {.images-avenue {background-image:url("1200x900/avenue.jpeg")}}
-@media (max-width : fullpx) {.images-avenue {background-image:url("full/avenue.jpeg")}}
+@media (max-width : 1600px) {.images-avenue {background-image:url("1600x1200/avenue.jpeg")}}
+@media (max-width : 2000px) {.images-avenue {background-image:url("2000x1500/avenue.jpeg")}}
 .image-barn-team {background-image:url("full/barn-team.jpeg")}
 @media (max-width : 400px) {.images-barn-team {background-image:url("400x300/barn-team.jpeg")}}
 @media (max-width : 800px) {.images-barn-team {background-image:url("800x600/barn-team.jpeg")}}
 @media (max-width : 1200px) {.images-barn-team {background-image:url("1200x900/barn-team.jpeg")}}
-@media (max-width : fullpx) {.images-barn-team {background-image:url("full/barn-team.jpeg")}}
+@media (max-width : 1600px) {.images-barn-team {background-image:url("1600x1200/barn-team.jpeg")}}
+@media (max-width : 2000px) {.images-barn-team {background-image:url("2000x1500/barn-team.jpeg")}}
 .image-barn {background-image:url("full/barn.jpeg")}
 @media (max-width : 400px) {.images-barn {background-image:url("400x300/barn.jpeg")}}
 @media (max-width : 800px) {.images-barn {background-image:url("800x600/barn.jpeg")}}
 @media (max-width : 1200px) {.images-barn {background-image:url("1200x900/barn.jpeg")}}
-@media (max-width : fullpx) {.images-barn {background-image:url("full/barn.jpeg")}}
+@media (max-width : 1600px) {.images-barn {background-image:url("1600x1200/barn.jpeg")}}
+@media (max-width : 2000px) {.images-barn {background-image:url("2000x1500/barn.jpeg")}}
 .image-cats {background-image:url("full/cats.jpeg")}
 @media (max-width : 400px) {.images-cats {background-image:url("400x300/cats.jpeg")}}
 @media (max-width : 800px) {.images-cats {background-image:url("800x600/cats.jpeg")}}
 @media (max-width : 1200px) {.images-cats {background-image:url("1200x900/cats.jpeg")}}
-@media (max-width : fullpx) {.images-cats {background-image:url("full/cats.jpeg")}}
+@media (max-width : 1600px) {.images-cats {background-image:url("1600x1200/cats.jpeg")}}
+@media (max-width : 2000px) {.images-cats {background-image:url("2000x1500/cats.jpeg")}}
 .image-coffee {background-image:url("full/coffee.jpeg")}
 @media (max-width : 400px) {.images-coffee {background-image:url("400x300/coffee.jpeg")}}
 @media (max-width : 800px) {.images-coffee {background-image:url("800x600/coffee.jpeg")}}
 @media (max-width : 1200px) {.images-coffee {background-image:url("1200x900/coffee.jpeg")}}
-@media (max-width : fullpx) {.images-coffee {background-image:url("full/coffee.jpeg")}}
+@media (max-width : 1600px) {.images-coffee {background-image:url("1600x1200/coffee.jpeg")}}
+@media (max-width : 2000px) {.images-coffee {background-image:url("2000x1500/coffee.jpeg")}}
 .image-compass-flags {background-image:url("full/compass-flags.jpeg")}
 @media (max-width : 400px) {.images-compass-flags {background-image:url("400x300/compass-flags.jpeg")}}
 @media (max-width : 800px) {.images-compass-flags {background-image:url("800x600/compass-flags.jpeg")}}
 @media (max-width : 1200px) {.images-compass-flags {background-image:url("1200x900/compass-flags.jpeg")}}
-@media (max-width : fullpx) {.images-compass-flags {background-image:url("full/compass-flags.jpeg")}}
+@media (max-width : 1600px) {.images-compass-flags {background-image:url("1600x1200/compass-flags.jpeg")}}
+@media (max-width : 2000px) {.images-compass-flags {background-image:url("2000x1500/compass-flags.jpeg")}}
 .image-compass-table1 {background-image:url("full/compass-table1.jpeg")}
 @media (max-width : 400px) {.images-compass-table1 {background-image:url("400x300/compass-table1.jpeg")}}
 @media (max-width : 800px) {.images-compass-table1 {background-image:url("800x600/compass-table1.jpeg")}}
 @media (max-width : 1200px) {.images-compass-table1 {background-image:url("1200x900/compass-table1.jpeg")}}
-@media (max-width : fullpx) {.images-compass-table1 {background-image:url("full/compass-table1.jpeg")}}
+@media (max-width : 1600px) {.images-compass-table1 {background-image:url("1600x1200/compass-table1.jpeg")}}
+@media (max-width : 2000px) {.images-compass-table1 {background-image:url("2000x1500/compass-table1.jpeg")}}
 .image-compass-table2 {background-image:url("full/compass-table2.jpeg")}
 @media (max-width : 400px) {.images-compass-table2 {background-image:url("400x300/compass-table2.jpeg")}}
 @media (max-width : 800px) {.images-compass-table2 {background-image:url("800x600/compass-table2.jpeg")}}
 @media (max-width : 1200px) {.images-compass-table2 {background-image:url("1200x900/compass-table2.jpeg")}}
-@media (max-width : fullpx) {.images-compass-table2 {background-image:url("full/compass-table2.jpeg")}}
+@media (max-width : 1600px) {.images-compass-table2 {background-image:url("1600x1200/compass-table2.jpeg")}}
+@media (max-width : 2000px) {.images-compass-table2 {background-image:url("2000x1500/compass-table2.jpeg")}}
 .image-compass-table3 {background-image:url("full/compass-table3.jpeg")}
 @media (max-width : 400px) {.images-compass-table3 {background-image:url("400x300/compass-table3.jpeg")}}
 @media (max-width : 800px) {.images-compass-table3 {background-image:url("800x600/compass-table3.jpeg")}}
 @media (max-width : 1200px) {.images-compass-table3 {background-image:url("1200x900/compass-table3.jpeg")}}
-@media (max-width : fullpx) {.images-compass-table3 {background-image:url("full/compass-table3.jpeg")}}
+@media (max-width : 1600px) {.images-compass-table3 {background-image:url("1600x1200/compass-table3.jpeg")}}
+@media (max-width : 2000px) {.images-compass-table3 {background-image:url("2000x1500/compass-table3.jpeg")}}
 .image-compass-table4 {background-image:url("full/compass-table4.jpeg")}
 @media (max-width : 400px) {.images-compass-table4 {background-image:url("400x300/compass-table4.jpeg")}}
 @media (max-width : 800px) {.images-compass-table4 {background-image:url("800x600/compass-table4.jpeg")}}
 @media (max-width : 1200px) {.images-compass-table4 {background-image:url("1200x900/compass-table4.jpeg")}}
-@media (max-width : fullpx) {.images-compass-table4 {background-image:url("full/compass-table4.jpeg")}}
+@media (max-width : 1600px) {.images-compass-table4 {background-image:url("1600x1200/compass-table4.jpeg")}}
+@media (max-width : 2000px) {.images-compass-table4 {background-image:url("2000x1500/compass-table4.jpeg")}}
 .image-compass-table5 {background-image:url("full/compass-table5.jpeg")}
 @media (max-width : 400px) {.images-compass-table5 {background-image:url("400x300/compass-table5.jpeg")}}
 @media (max-width : 800px) {.images-compass-table5 {background-image:url("800x600/compass-table5.jpeg")}}
 @media (max-width : 1200px) {.images-compass-table5 {background-image:url("1200x900/compass-table5.jpeg")}}
-@media (max-width : fullpx) {.images-compass-table5 {background-image:url("full/compass-table5.jpeg")}}
+@media (max-width : 1600px) {.images-compass-table5 {background-image:url("1600x1200/compass-table5.jpeg")}}
+@media (max-width : 2000px) {.images-compass-table5 {background-image:url("2000x1500/compass-table5.jpeg")}}
 .image-compass {background-image:url("full/compass.jpeg")}
 @media (max-width : 400px) {.images-compass {background-image:url("400x300/compass.jpeg")}}
 @media (max-width : 800px) {.images-compass {background-image:url("800x600/compass.jpeg")}}
 @media (max-width : 1200px) {.images-compass {background-image:url("1200x900/compass.jpeg")}}
-@media (max-width : fullpx) {.images-compass {background-image:url("full/compass.jpeg")}}
+@media (max-width : 1600px) {.images-compass {background-image:url("1600x1200/compass.jpeg")}}
+@media (max-width : 2000px) {.images-compass {background-image:url("2000x1500/compass.jpeg")}}
 .image-discussion {background-image:url("full/discussion.jpeg")}
 @media (max-width : 400px) {.images-discussion {background-image:url("400x300/discussion.jpeg")}}
 @media (max-width : 800px) {.images-discussion {background-image:url("800x600/discussion.jpeg")}}
 @media (max-width : 1200px) {.images-discussion {background-image:url("1200x900/discussion.jpeg")}}
-@media (max-width : fullpx) {.images-discussion {background-image:url("full/discussion.jpeg")}}
+@media (max-width : 1600px) {.images-discussion {background-image:url("1600x1200/discussion.jpeg")}}
+@media (max-width : 2000px) {.images-discussion {background-image:url("2000x1500/discussion.jpeg")}}
 .image-explore {background-image:url("full/explore.jpeg")}
 @media (max-width : 400px) {.images-explore {background-image:url("400x300/explore.jpeg")}}
 @media (max-width : 800px) {.images-explore {background-image:url("800x600/explore.jpeg")}}
 @media (max-width : 1200px) {.images-explore {background-image:url("1200x900/explore.jpeg")}}
-@media (max-width : fullpx) {.images-explore {background-image:url("full/explore.jpeg")}}
+@media (max-width : 1600px) {.images-explore {background-image:url("1600x1200/explore.jpeg")}}
+@media (max-width : 2000px) {.images-explore {background-image:url("2000x1500/explore.jpeg")}}
 .image-flags {background-image:url("full/flags.jpeg")}
 @media (max-width : 400px) {.images-flags {background-image:url("400x300/flags.jpeg")}}
 @media (max-width : 800px) {.images-flags {background-image:url("800x600/flags.jpeg")}}
 @media (max-width : 1200px) {.images-flags {background-image:url("1200x900/flags.jpeg")}}
-@media (max-width : fullpx) {.images-flags {background-image:url("full/flags.jpeg")}}
+@media (max-width : 1600px) {.images-flags {background-image:url("1600x1200/flags.jpeg")}}
+@media (max-width : 2000px) {.images-flags {background-image:url("2000x1500/flags.jpeg")}}
 .image-kings {background-image:url("full/kings.jpeg")}
 @media (max-width : 400px) {.images-kings {background-image:url("400x300/kings.jpeg")}}
 @media (max-width : 800px) {.images-kings {background-image:url("800x600/kings.jpeg")}}
 @media (max-width : 1200px) {.images-kings {background-image:url("1200x900/kings.jpeg")}}
-@media (max-width : fullpx) {.images-kings {background-image:url("full/kings.jpeg")}}
+@media (max-width : 1600px) {.images-kings {background-image:url("1600x1200/kings.jpeg")}}
+@media (max-width : 2000px) {.images-kings {background-image:url("2000x1500/kings.jpeg")}}
 .image-river1 {background-image:url("full/river1.jpeg")}
 @media (max-width : 400px) {.images-river1 {background-image:url("400x300/river1.jpeg")}}
 @media (max-width : 800px) {.images-river1 {background-image:url("800x600/river1.jpeg")}}
 @media (max-width : 1200px) {.images-river1 {background-image:url("1200x900/river1.jpeg")}}
-@media (max-width : fullpx) {.images-river1 {background-image:url("full/river1.jpeg")}}
+@media (max-width : 1600px) {.images-river1 {background-image:url("1600x1200/river1.jpeg")}}
+@media (max-width : 2000px) {.images-river1 {background-image:url("2000x1500/river1.jpeg")}}
 .image-river2 {background-image:url("full/river2.jpeg")}
 @media (max-width : 400px) {.images-river2 {background-image:url("400x300/river2.jpeg")}}
 @media (max-width : 800px) {.images-river2 {background-image:url("800x600/river2.jpeg")}}
 @media (max-width : 1200px) {.images-river2 {background-image:url("1200x900/river2.jpeg")}}
-@media (max-width : fullpx) {.images-river2 {background-image:url("full/river2.jpeg")}}
+@media (max-width : 1600px) {.images-river2 {background-image:url("1600x1200/river2.jpeg")}}
+@media (max-width : 2000px) {.images-river2 {background-image:url("2000x1500/river2.jpeg")}}
 .image-river3 {background-image:url("full/river3.jpeg")}
 @media (max-width : 400px) {.images-river3 {background-image:url("400x300/river3.jpeg")}}
 @media (max-width : 800px) {.images-river3 {background-image:url("800x600/river3.jpeg")}}
 @media (max-width : 1200px) {.images-river3 {background-image:url("1200x900/river3.jpeg")}}
-@media (max-width : fullpx) {.images-river3 {background-image:url("full/river3.jpeg")}}
+@media (max-width : 1600px) {.images-river3 {background-image:url("1600x1200/river3.jpeg")}}
+@media (max-width : 2000px) {.images-river3 {background-image:url("2000x1500/river3.jpeg")}}
 .image-tabletennis {background-image:url("full/tabletennis.jpeg")}
 @media (max-width : 400px) {.images-tabletennis {background-image:url("400x300/tabletennis.jpeg")}}
 @media (max-width : 800px) {.images-tabletennis {background-image:url("800x600/tabletennis.jpeg")}}
 @media (max-width : 1200px) {.images-tabletennis {background-image:url("1200x900/tabletennis.jpeg")}}
-@media (max-width : fullpx) {.images-tabletennis {background-image:url("full/tabletennis.jpeg")}}
+@media (max-width : 1600px) {.images-tabletennis {background-image:url("1600x1200/tabletennis.jpeg")}}
+@media (max-width : 2000px) {.images-tabletennis {background-image:url("2000x1500/tabletennis.jpeg")}}
 .image-weekend-away {background-image:url("full/weekend-away.jpeg")}
 @media (max-width : 400px) {.images-weekend-away {background-image:url("400x300/weekend-away.jpeg")}}
 @media (max-width : 800px) {.images-weekend-away {background-image:url("800x600/weekend-away.jpeg")}}
 @media (max-width : 1200px) {.images-weekend-away {background-image:url("1200x900/weekend-away.jpeg")}}
-@media (max-width : fullpx) {.images-weekend-away {background-image:url("full/weekend-away.jpeg")}}
+@media (max-width : 1600px) {.images-weekend-away {background-image:url("1600x1200/weekend-away.jpeg")}}
+@media (max-width : 2000px) {.images-weekend-away {background-image:url("2000x1500/weekend-away.jpeg")}}
 .image-welcome-tea {background-image:url("full/welcome-tea.jpeg")}
 @media (max-width : 400px) {.images-welcome-tea {background-image:url("400x300/welcome-tea.jpeg")}}
 @media (max-width : 800px) {.images-welcome-tea {background-image:url("800x600/welcome-tea.jpeg")}}
 @media (max-width : 1200px) {.images-welcome-tea {background-image:url("1200x900/welcome-tea.jpeg")}}
-@media (max-width : fullpx) {.images-welcome-tea {background-image:url("full/welcome-tea.jpeg")}}
+@media (max-width : 1600px) {.images-welcome-tea {background-image:url("1600x1200/welcome-tea.jpeg")}}
+@media (max-width : 2000px) {.images-welcome-tea {background-image:url("2000x1500/welcome-tea.jpeg")}}

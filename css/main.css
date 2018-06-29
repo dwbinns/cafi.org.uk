@@ -19,8 +19,7 @@ header {
 header .rotate {
 	position: relative;
 	height: 70vh;
-	min-height: 300px;
-
+	min-height: 250px;
 }
 header .carousel-fade .carousel-item {
     opacity: 0;
@@ -28,14 +27,12 @@ header .carousel-fade .carousel-item {
     transition-property: opacity;
 }
 header .masthead {
-	min-height: 30rem;
 	position: absolute;
 	top: 0;
 	display: table;
 	width: 100%;
-	height: auto;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	height: 70vh;
+	min-height: 250px;
 }
 
 div.heading {
@@ -58,13 +55,7 @@ div.heading h2 {
 	text-align: center;
 }
 
-@media (min-width: 992px) {
-	header .masthead {
-		height: 70vh;
-	}
-}
-
-@media (max-width : 600px) {
+@media (max-width: 600px) {
 	div.heading h1 {
 		font-size: 33px;
 	}
@@ -73,13 +64,40 @@ div.heading h2 {
 	}
 }
 
-
-@media (max-width : 400px) {
-	header .masthead {
-		padding-top: 5rem;
-	}
+@media (max-width: 420px) {
 	div.heading {
 		max-width: 90%;
+	}
+}
+@media (min-width: 576px)
+  and (max-width: 992px)
+  and (orientation: landscape) {
+	.container {
+	    max-width: 90%;
+	}
+}
+@media (min-width: 660px)
+  and (orientation: landscape) {
+	.col-md-6 {
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	}
+}
+@media (min-width: 992px)
+  and (orientation: landscape) {
+	.col-lg-8 {
+	    -ms-flex: 0 0 66.666667%;
+	    flex: 0 0 66.666667%;
+	    max-width: 66.666667%;
+	}
+}
+@media (min-width: 992px)
+  and (orientation: landscape) {
+	.col-lg-4 {
+	    -ms-flex: 0 0 33.333333%;
+	    flex: 0 0 33.333333%;
+	    max-width: 33.333333%;
 	}
 }
 
