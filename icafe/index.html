@@ -2,13 +2,9 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Friends International Cambridge</title>
+    <base href=".."/>
     <style>
-        body {
-            max-width: 800px;
-            margin: auto;
-        }
         img {
-            max-width: 800px;
             width: 100%;
         }
         .main-button {
@@ -22,15 +18,18 @@
             border: none;
             box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.5);
             margin: 20px auto;
-            width: 500px;
+            max-width: 500px;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <p>
-        <a class="main-button" href='/'>More information about events for international students</a>
+        <a class="main-button" href='.'>More information about events for international students</a>
     </p>
-    <img src='icafe-800.jpeg'/>
+    <img
+        sizes="100vw"
+        srcset="images/400x300/icafe.jpeg 400w,images/800x600/icafe.jpeg 800w,images/1200x900/icafe.jpeg 1200w,images/1600x1200/icafe.jpeg 1600w,images/2000x1500/icafe.jpeg 2000w"
+        src='images/full/icafe.jpeg'/>
 </body>
 </html>

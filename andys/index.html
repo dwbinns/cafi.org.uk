@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Friends International Cambridge</title>
+    <base href=".."/>
     <style>
         body {
             max-width: 800px;
@@ -27,16 +28,20 @@
             border: none;
             box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.5);
             margin: 20px auto;
-            width: 500px;
+            max-width: 500px;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <p>
-        <a class="main-button" href='/'>More information about events for international students</a>
+        <a class="main-button" href='.'>More information about events for international students</a>
     </p>
-    <img src='front.jpeg'/>
-    <img src='back.jpeg'/>
+    <img sizes="(max-width: 800px) 100vw, (max-width: 1620px) 800px, 1620px"
+        srcset="images/400x300/andys-front.jpeg 400w,images/800x600/andys-front.jpeg 800w,images/1200x900/andys-front.jpeg 1200w,images/1600x1200/andys-front.jpeg 1600w,images/2000x1500/andys-front.jpeg 2000w"
+        src='images/full/andys-front.jpeg'/>
+    <img sizes="(max-width: 800px) 100vw, (max-width: 1620px) 800px, 1620px"
+        srcset="images/400x300/andys-back.jpeg 400w,images/800x600/andys-back.jpeg 800w,images/1200x900/andys-back.jpeg 1200w,images/1600x1200/andys-back.jpeg 1600w,images/2000x1500/andys-back.jpeg 2000w"
+        src='images/full/andys-back.jpeg'/>
 </body>
 </html>

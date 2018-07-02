@@ -12,7 +12,7 @@ function exec(command, ...args) {
 }
 
 
-(async()=>{
+(async(...fileNames)=>{
     let here=__dirname;
     let source=join(here,"renamed");
 
@@ -23,21 +23,31 @@ function exec(command, ...args) {
     let files = (await readdir(source)).filter(name=>[".jpg", ".jpeg"].includes(extname(name).toLowerCase()));
 
     let cssText='';
-    let htmlText='';
+    let carouselText='';
+    let imageText='';
 
     for (let file of files) {
-        let name=file.replace(/\..*$/,'');
-        cssText+=`.image-${name} {background-image:url("full/${file}")}\n`;
-        htmlText+=`<div data-src="${file}"></div>\n`;
-        await Promise.all(sizes.map(size=>{
-            let target=join(here,size);
-            let width=size.split("x")[0];
-            if (size!='full') cssText+=`@media (max-width : ${width}px) {.images-${name} {background-image:url("${size}/${file}")}}\n`;
-            return exec('convert',join(source,file),'-interlace','Plane',...size!="full"?['-resize',size]:[],'-quality','90',join(target,file));
-        }));
+        if (fileNames.includes(file) || fileNames[0]=='all') {
+            let name=file.replace(/\..*$/,'');
+            cssText+=`.image-${name} {background-image:url("full/${file}")}\n`;
+            let imageSizes='';
+            let imageLocations=[];
+            carouselText+=`<div data-src="${file}"></div>\n`;
+            await Promise.all(sizes.map(size=>{
+                let target=join(here,size);
+                let width=size.split("x")[0];
+                if (size!='full') {
+                    cssText+=`@media (max-width : ${width}px) {.images-${name} {background-image:url("${size}/${file}")}}\n`;
+                    imageLocations.push(`images/${size}/${file} ${width}w`);
+                }
+                return exec('convert',join(source,file),'-interlace','Plane',...size!="full"?['-resize',size]:[],'-quality','90',join(target,file));
+            }));
+            imageText+=`srcset="${imageLocations.join(",")}"\n`;
+        }
     }
 
     await writeFile(join(here,"images.css"), cssText);
-    await writeFile(join(here,"images.html"), htmlText);
+    await writeFile(join(here,"carousel.html"), carouselText);
+    await writeFile(join(here,"srcset.txt"), imageText);
 
-})().catch(e=>console.error(e))
+})(...process.argv.slice(2)).catch(e=>console.error(e))
