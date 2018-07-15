@@ -1,5 +1,12 @@
 Redirect 301 /events /
 Redirect 301 /andysbarn /
+Redirect 301 /locallink /
+Redirect 301 /choir /
+Redirect 301 /contact /
+Redirect 301 /andysbarn /
+Redirect 301 /carolservice /
+Redirect 301 /nov23/speakers /
+Redirect 301 /nov23 /
 
 Options +Includes -Indexes +FollowSymLinks
 
