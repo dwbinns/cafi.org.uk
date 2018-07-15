@@ -1,2 +1,45 @@
 Redirect 301 /events /
 Redirect 301 /andysbarn /
+
+Options +Includes -Indexes +FollowSymLinks
+
+DirectorySlash off
+
+RewriteBase /
+RewriteEngine on
+
+#RewriteCond %{HTTP_COOKIE} !^.*auth.*$ [NC]
+#RewriteRule ^barn/resources /no-access [L,R]
+
+
+RewriteCond %{REQUEST_FILENAME}.shtml -f
+RewriteRule ^([^.]*[^./]+)$ $1.shtml
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^([^.]*[^./]+)$ $1/ [R=301,L]
+
+RewriteRule ^barn-publicity barn/publicity/ [R=301,L]
+
+
+
+AddType text/html .shtml
+AddType text/cache-manifest .appcache
+AddOutputFilter INCLUDES .shtml
+DirectoryIndex index.html index.shtml
+
+ExpiresByType text/cache-manifest access
+
+AddHandler cgi-script cgi py
+Options +ExecCGI
+
+<Files ~ ".auth$">
+    Order allow,deny
+    Deny from all
+    Satisfy all
+</Files>
+
+<Files ~ ".db$">
+    Order allow,deny
+    Deny from all
+    Satisfy all
+</Files>
