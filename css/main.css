@@ -76,7 +76,37 @@ div.heading h2 {
 	    max-width: 90%;
 	}
 }
-@media (min-width: 660px)
+@media (min-width: 1200px) {
+	div.heading {
+		max-width: 85%;
+	}
+}
+
+main {
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2fefe), to(#ffffff));
+    background: linear-gradient(to bottom, #f2fefe 0%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fefe', endColorstr='#ffffff', GradientType=0);
+}
+
+div.feature {
+	background-color: #ffffff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.3);
+	height: 380px;
+	margin-bottom: 2em;
+	padding: 20px;
+}
+div.feature ul {
+	padding-left: 20px;
+}
+div.events {
+	text-align: center;
+	margin-bottom: 2em;
+	position: relative;
+}
+@media (min-width: 640px)
   and (orientation: landscape) {
 	.col-md-6 {
 	    -ms-flex: 0 0 50%;
@@ -99,26 +129,6 @@ div.heading h2 {
 	    flex: 0 0 33.333333%;
 	    max-width: 33.333333%;
 	}
-}
-
-div.content {
-	background: #fff;
-}
-
-div.feature {
-	margin-bottom: 2em;
-	padding: 20px;
-	height: 380px;
-	background: #ffffff;
-	box-shadow: 0 0 20px 5px #ddd;
-}
-div.feature ul {
-	padding-left: 20px;
-}
-div.events {
-	text-align: center;
-	margin-bottom: 2em;
-	position: relative;
 }
 
 iframe.map {
@@ -168,20 +178,20 @@ section.contact_area .contact-form {
     box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-div.footer {
+footer {
 	padding: 20px 0;
 	clear: both;
 	background: #222;
 	color: #fff;
 	font-size: 14px;
 }
-div.footer .links_legal_area a {
+footer .links_legal_area a {
 	color: #81848f;
 	-webkit-transition: all 400ms linear 0s;
     -o-transition: all 250ms linear 0s;
     transition: all 250ms linear 0s;
 }
-div.footer .links_legal_area a:hover {
+footer .links_legal_area a:hover {
 	color: #066;/*#2f60c3;*/
 }
 
