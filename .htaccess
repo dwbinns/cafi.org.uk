@@ -1,3 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 Redirect 301 /events /
 Redirect 301 /andysbarn /
 Redirect 301 /locallink /
@@ -9,6 +13,8 @@ Redirect 301 /nov23/speakers /
 Redirect 301 /nov23 /
 Redirect 301 /autumn /
 Redirect 301 /hospitality/form https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tURU9CRVdQVDRORUpJSFE5STZXTFczUFRYMi4u
+Redirect 301 /hospitality/form.shtml https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tURU9CRVdQVDRORUpJSFE5STZXTFczUFRYMi4u
+Redirect 301 /hospitality/hosts https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tUOVhWNVVCTlE3RjVXSUhDSDBTRElUVkdRTy4u
 
 Options +Includes -Indexes +FollowSymLinks
 
