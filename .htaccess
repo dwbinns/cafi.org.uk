@@ -15,6 +15,7 @@ Redirect 301 /autumn /
 Redirect 301 /hospitality/form https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tURU9CRVdQVDRORUpJSFE5STZXTFczUFRYMi4u
 Redirect 301 /hospitality/form.shtml https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tURU9CRVdQVDRORUpJSFE5STZXTFczUFRYMi4u
 Redirect 301 /hospitality/hosts https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tUOVhWNVVCTlE3RjVXSUhDSDBTRElUVkdRTy4u
+Redirect 301 /hospitality/christmas https://forms.office.com/Pages/ResponsePage.aspx?id=SaHc2JDlSUeTYPlE65neCQgH_wwl4DZEllA-vYnf13tUNkpYRUJNOTRUTFJTQVdFN05XTTNLVEJYSy4u
 
 Options +Includes -Indexes +FollowSymLinks
 
